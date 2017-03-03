@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+mongoose.Promise = require('bluebird');
 const mongoUrl = 'mongodb://localhost:27017/DB'; // @todo use global var
 
 export default callback => {
